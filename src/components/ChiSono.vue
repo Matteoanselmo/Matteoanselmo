@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-10">
                     <p class="typewriter"> 
-                        <span data-text="ciao a tutti mi chiamo matteo anselmo., e sono uno web developer., sono ancora all'inizio, ma so già fare cose carine, ti consiglio di andare nella sezione repo per dare un occhiata"></span>
+                        <span data-text="ciao a tutti mi chiamo matteo anselmo, e sono uno web developer, ma so fare cose carine, ti consiglio di andare nella sezione repo per dare un occhiata, la trovi nel menu"></span>
                     </p>
                 </div>
             </div>
