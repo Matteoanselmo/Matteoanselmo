@@ -1,2 +1,7 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import '~bootstrap/scss/bootstrap.scss';
+
+$primary: #385158;
+body{
+    background-color: $primary;
+}
