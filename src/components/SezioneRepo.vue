@@ -8,13 +8,13 @@
         <div class="row rounded-pill my-circle-effect"></div>
         <div class="container pt-5">
             <div class="row gy-3 h-100 justify-content-center align-items-center">
-                <div class="col-6 col-lg-3" v-for="(card, index) in repoArray" :key="index">
+                <div class="col-12 col-lg-3" v-for="(card, index) in repoArray" :key="index">
                     <div class="card shadow border-0">
                     <div class="card-body">
                         <h5 class="card-title text-uppercase">{{ card.titolo }}</h5>
                         <p class="card-text">{{card.descrizione}}</p>
                         <div class="w-100 text-center">
-                            <a href="#" class="btn">{{ card.link }}</a>
+                            <a :href="card.link" class="btn" target="blank">{{ card.titolo }}</a>
                         </div>
                     </div>
                     </div>
@@ -31,49 +31,29 @@ export default {
         return{
             repoArray: [
                 {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
+                    titolo: 'vue-boolflix',
+                    link: 'https://github.com/Matteoanselmo/vue-boolflix',
+                    descrizione: 'Riproduzione del noto video-streaming NETFLIX'
                 },
                 {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
+                    titolo: 'deliveboo',
+                    link: 'https://github.com/giagra91/DeliveBoo',
+                    descrizione: 'Realazzato insieme al mio gruppo Boolean, una copia di DELIVEROO'
                 },
                 {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
+                    titolo: 'boolpress',
+                    link: 'https://github.com/Matteoanselmo/laravel-boolpress',
+                    descrizione: 'Riproduzione di WordPress'
                 },
                 {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
+                    titolo: 'vue-dc-comics',
+                    link: 'https://github.com/Matteoanselmo/vue-dc-comics',
+                    descrizione: 'Riproduzione prima pagina del sito di DC comics'
                 },
                 {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
-                },
-                {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
-                },
-                {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
-                },
-                {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
-                },
-                {
-                    titolo: 'titolo repo',
-                    link: 'link repo',
-                    descrizione: 'descrizione repo'
+                    descrizione: 'i miei progetti più grandi sono privati per tanto ti lascio la mia email qua nel caso tu sia interessato/a (ci sono e-commerce, form per ricerca e sviluppo e molo altro)',
+                    link: 'mailto:matteo.anselmo96@gmail.com',
+                    titolo: 'matteo.anselmo96@gmail.com'
                 },
             ]
         }
@@ -94,6 +74,7 @@ export default {
 
         height: calc(100vh - 120px);
         .card{
+            min-height: 170px;
             background-color: #293D42;
             color: white;
             max-width: 100%;
