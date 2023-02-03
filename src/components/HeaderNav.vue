@@ -1,42 +1,28 @@
 <template>
-    <!-- <div class="container-fluid">
-        <div class="row">
-            <div class="col-4">
-                <button class="btn btn-primary" @click="$emit('setStep', 0)">Chi sono</button>
-            </div>
-            <div class="col-4">
-                <button class="btn btn-primary" @click="$emit('setStep', 1)">Repo</button>
-            </div>
-            <div class="col-4">
-                <button class="btn btn-primary" @click="$emit('setStep', 2)">Giochi</button>
-            </div>
-        </div>
-    </div> -->
-    <!-- Navigation -->
     <nav>
-            <div id="menuToggle">
-                <input id="isAgeSelected" type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <li @click="$emit('setStep', 0)">
-                        <a href="#">Chi sono</a>
-                    </li>
-                    <li @click="$emit('setStep', 1)">
-                        <a href="#">Repo</a>
-                    </li>
-                    <li @click="$emit('setStep', 2)">
-                        <a href="#">Giochi</a>  
-                    </li>
-                </ul>
-            </div>
-        </nav>
+		<div id="menuToggle">
+			<input id="isAgeSelected" type="checkbox" />
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+				<li @click="$emit('setStep', 0)">
+					<a href="#">Chi sono</a>
+				</li>
+				<li @click="$emit('setStep', 1)">
+					<a href="#">Repo</a>
+				</li>
+				<li @click="$emit('setStep', 2)">
+					<a href="#">Giochi</a>  
+				</li>
+			</ul>
+		</div>
+	</nav>
 </template>
 
 <script>
 export default {
-    name: 'HeaderNav'
+    name: 'HeaderNav',
 }
 </script>
 
