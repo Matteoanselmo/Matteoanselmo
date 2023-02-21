@@ -8,7 +8,7 @@
         <div class="row rounded-pill my-circle-effect"></div>
         <div class="container pt-5">
             <div class="row gy-3 h-100 justify-content-center align-items-center">
-                <div class="col-12 col-lg-3" v-for="(card, index) in repoArray" :key="index">
+                <div class="col-12 col-lg-3" v-for="(card, index) in repoArray" :key="index" :class="card.titolo == 'matteo.anselmo96@gmail.com' ? 'col-lg-12' : '' ">
                     <div class="card shadow border-0">
                     <div class="card-body">
                         <h5 class="card-title text-uppercase">{{ card.titolo }}</h5>
@@ -49,6 +49,16 @@ export default {
                     titolo: 'vue-dc-comics',
                     link: 'https://github.com/Matteoanselmo/vue-dc-comics',
                     descrizione: 'Riproduzione prima pagina del sito di DC comics'
+                },
+                {
+                    titolo: 'NinnaNannaOh',
+                    link: 'https://www.ninnanannaoh.com/',
+                    descrizione: 'E-commerce con diversi tipi di prodotti (dal più semplice scegli e compra a prodotti con svariate personalizzazioni)'
+                },
+                {
+                    titolo: 'Progetto Per UniMI',
+                    link: 'https://github.com/Matteoanselmo/unimi',
+                    descrizione: 'La repo è privata ma basta chiedere per aver più info, il progetto è per la ricerca e sviluppo.'
                 },
                 {
                     descrizione: 'i miei progetti più grandi sono privati per tanto ti lascio la mia email qua nel caso tu sia interessato/a (ci sono e-commerce, form per ricerca e sviluppo e molo altro)',
