@@ -231,7 +231,7 @@
   .toolbar {
     position: fixed;
     right: 10%;
-    top: 15%;
+    top: 12%;
     z-index: 3;
   }
   

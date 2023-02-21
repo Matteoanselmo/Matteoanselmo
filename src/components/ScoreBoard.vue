@@ -47,18 +47,16 @@
     display: inline-block;
     font: bold 12px / 1.4 arial;
     margin-right: 20px;
+    font-size: xx-large;
   }
   
   .scoreboard {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    min-height: 40px;
-    position: fixed;
-    padding: 15px 20px;
-    top:0;
-    left:0;
-    width: 100%;
+    position: absolute;
+    top:18%;
+    right:8%;
   
     @media (min-width: 700px) {
       padding: 15px 50px;
@@ -66,11 +64,10 @@
   }
   
   .turn {
-    height: 10px;
+    font-size: xx-large;
     border-radius: 5px;
     display: inline-block;
     margin-right: 3px;
-    width: 10px;
   }
   
   .turn--miss {
