@@ -5,17 +5,26 @@
                 <i class="text-white fa-solid fa-gamepad"></i>
             </div>
             <div class="row rounded-pill my-circle-effect"></div>
-            <div class="offset-md-2 col-12 col-md-4 ">
+            <div class="col-12 col-md-4 ">
                 <router-link class="btn game-btn" :to="{name: 'snake'}">
                     <span class="text-uppercase">Snake</span>
                 </router-link>
             </div>
-            <div class="col-12 col-md-6 my-2">
+            <div class="col-12 col-md-4 my-2">
                 <router-link class="btn game-btn" :to="{name: 'trivia'}">
                     <span class="text-uppercase">
                         <i class="fa-regular fa-hand-back-fist"></i>
                         <i class="fa-regular fa-hand px-2"></i>
                         <i class="fa-regular fa-hand-scissors"></i>
+                    </span>
+                </router-link>
+            </div>
+            <div class="col-12 col-md-4 my-2">
+                <router-link class="btn game-btn" :to="{name: 'cardMatch'}">
+                    <span class="text-uppercase">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <i class="mx-2 fa-solid fa-equals"></i>
+                        <i class="fa-solid fa-laptop-code"></i>
                     </span>
                 </router-link>
             </div>

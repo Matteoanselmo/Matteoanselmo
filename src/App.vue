@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderNav @setStep = "(newStep) => step = newStep"/>
+      
     <transition name="slide-fade">
       <section v-if="step === 0">
         <ChiSono/>

@@ -7,7 +7,7 @@
 			<span></span>
 			<ul id="menu">
 				<li @click="$emit('setStep', 0)">
-					<a href="#">Chi sono</a>
+					<a href="/">Chi sono</a>
 				</li>
 				<li @click="$emit('setStep', 1)">
 					<a href="#">Repo</a>
@@ -101,7 +101,7 @@ export default {
 	padding: 7rem 2.75rem 2.1875rem 2.1875rem;
 	border-bottom-right-radius: 1rem;
 	border-bottom-left-radius: 1rem;
-	background: #25373bc2;
+	background: #25373b;
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
 	transform-origin: 0% 0%;
