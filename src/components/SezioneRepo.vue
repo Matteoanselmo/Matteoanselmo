@@ -27,7 +27,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <!-- <div class="col-12">
                     <h2 class="text-white text-center mb-4">
                         SE hai domande contattami!
                     </h2>
@@ -39,7 +39,7 @@
                         <label class="mb-3">Message <textarea name="message" class="form-control"></textarea></label>
                         <button class="btn text-white shadow px-3 py-2" type="submit">Send</button>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
