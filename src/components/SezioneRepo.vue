@@ -31,14 +31,13 @@
                     <h2 class="text-white text-center mb-4">
                         SE hai domande contattami!
                     </h2>
-                    <form name="contact" netlify>
-                        <div class="mb-3">
-                            <input type="email" id="e-mail" placeholder="La tua email" class="form-control mb-3">
-                            <textarea name="description" cols="30" rows="10" placeholder="Scrivi quello che vuoi!" class="form-control"></textarea>
-                        </div>
-                        <div class="text-center mb-4">
-                            <button type="submit" class="btn text-white text-uppercase  shadow px-4 py-3">Invia</button>
-                        </div>
+                    <form name="contact" method="POST" data-netlify="true" class="text-white d-flex flex-column align-items-center">
+                        <input type="hidden" name="subject" 
+                        value="Sales inquiry from mysitename.netlify.app" />
+                        <label class="mb-3">Name <input type="text" name="name" class="form-control" /></label>
+                        <label class="mb-3">Email <input type="email" name="email" class="form-control" /></label>
+                        <label class="mb-3">Message <textarea name="message" class="form-control"></textarea></label>
+                        <button class="btn text-white shadow px-3 py-2" type="submit">Send</button>
                     </form>
                 </div>
             </div>
