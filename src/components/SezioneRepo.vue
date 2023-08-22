@@ -8,16 +8,38 @@
         <div class="row rounded-pill my-circle-effect"></div>
         <div class="container pt-5">
             <div class="row gy-3 h-100 justify-content-center align-items-center">
-                <div class="col-12 col-lg-3" v-for="(card, index) in repoArray" :key="index" :class="card.titolo == 'matteo.anselmo96@gmail.com' ? 'col-lg-12' : '' ">
+                <div class="col-12">
+                    <h2 class="text-white">
+                        Piccola premessa, molti progetti non posso inserirli nel mio portfolio per questioni di privacy 🥹
+                    </h2>
+                </div>
+                <div class="col-12 col-lg-3 mb-4" v-for="(card, index) in repoArray" :key="index" :class="card.titolo == 'matteo.anselmo96@gmail.com' ? 'col-lg-12' : '' ">
                     <div class="card shadow border-0">
                     <div class="card-body">
                         <h5 class="card-title text-uppercase">{{ card.titolo }}</h5>
                         <p class="card-text">{{card.descrizione}}</p>
-                        <div class="w-100 text-center">
-                            <a :href="card.link" class="btn" target="blank">{{ card.titolo }}</a>
+                        <div class="w-100 d-flex align-items-center justify-content-center mb-2">
+                            <a :href="card.linkToGitHub" class="btn" target="blank"><i class="text-white fa-brands fa-github fs-5 me-2"></i> {{ card.titolo }}</a>
+                        </div>
+                        <div class="w-100 d-flex align-items-center justify-content-center" v-if="card.link">
+                            <a :href="card.linkToGitHub" class="btn" target="blank"><i class="text-white fa-solid fa-globe fs-5 me-2"></i> {{ card.titolo }}</a>
                         </div>
                     </div>
                     </div>
+                </div>
+                <div class="col-12">
+                    <h2 class="text-white text-center mb-4">
+                        SE hai domande contattami!
+                    </h2>
+                    <form name="contact" netlify>
+                        <div class="mb-3">
+                            <input type="email" id="e-mail" placeholder="La tua email" class="form-control mb-3">
+                            <textarea name="description" cols="30" rows="10" placeholder="Scrivi quello che vuoi!" class="form-control"></textarea>
+                        </div>
+                        <div class="text-center mb-4">
+                            <button type="submit" class="btn text-white text-uppercase  shadow px-4 py-3">Invia</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -32,37 +54,39 @@ export default {
             repoArray: [
                 {
                     titolo: 'vue-boolflix',
-                    link: 'https://github.com/Matteoanselmo/vue-boolflix',
+                    linkToGitHub: 'https://github.com/Matteoanselmo/vue-boolflix',
                     descrizione: 'Riproduzione del noto video-streaming NETFLIX'
                 },
                 {
                     titolo: 'deliveboo',
-                    link: 'https://github.com/giagra91/DeliveBoo',
+                    linkToGitHub: 'https://github.com/giagra91/DeliveBoo',
                     descrizione: 'Realazzato insieme al mio gruppo Boolean, una copia di DELIVEROO'
                 },
                 {
                     titolo: 'boolpress',
-                    link: 'https://github.com/Matteoanselmo/laravel-boolpress',
+                    linkToGitHub: 'https://github.com/Matteoanselmo/laravel-boolpress',
                     descrizione: 'Riproduzione di WordPress'
                 },
                 {
                     titolo: 'vue-dc-comics',
-                    link: 'https://github.com/Matteoanselmo/vue-dc-comics',
+                    linkToGitHub: 'https://github.com/Matteoanselmo/vue-dc-comics',
                     descrizione: 'Riproduzione prima pagina del sito di DC comics'
                 },
                 {
                     titolo: 'NinnaNannaOh',
-                    link: 'https://www.ninnanannaoh.com/',
-                    descrizione: 'E-commerce con diversi tipi di prodotti (dal più semplice scegli e compra a prodotti con svariate personalizzazioni)'
+                    linkToGitHub: 'https://www.ninnanannaoh.com/',
+                    descrizione: 'E-commerce con diversi tipi di prodotti (dal più semplice scegli e compra a prodotti con svariate personalizzazioni)',
+                    link: 'https://www.ninnanannaoh.com/'
                 },
                 {
-                    titolo: 'Progetto Per UniMI',
-                    link: 'https://github.com/Matteoanselmo/unimi',
-                    descrizione: 'La repo è privata ma basta chiedere per aver più info, il progetto è per la ricerca e sviluppo.'
+                    titolo: 'ATMSST (UNIMI)',
+                    linkToGitHub: 'https://github.com/Matteoanselmo/unimi',
+                    descrizione: 'La repo è privata ma basta chiedere per aver più info, il progetto è per la ricerca e sviluppo.',
+                    link: 'https://www.atmsst.it/'
                 },
                 {
                     descrizione: 'i miei progetti più grandi sono privati per tanto ti lascio la mia email qua nel caso tu sia interessato/a (ci sono e-commerce, form per ricerca e sviluppo e molo altro)',
-                    link: 'mailto:matteo.anselmo96@gmail.com',
+                    linkToGitHub: 'mailto:matteo.anselmo96@gmail.com',
                     titolo: 'matteo.anselmo96@gmail.com'
                 },
             ]
